@@ -77,15 +77,104 @@
       <div>
       </div>
 
-      <!-- Подменю (для раздела Проекты) -->
-      <div id="submenu-projects" class="mb-10 hidden">
-        <!-- Пример подменю: будет отображаться при переходе на раздел "Проекты" -->
-        <nav class="space-y-2 text-right font-medium">
-          <a href="/projects/interior" class="block hover:text-gray-900">Интерьеры</a>
-          <a href="/projects/architecture" class="block hover:text-gray-900">Архитектура</a>
-          <a href="/projects/public" class="block hover:text-gray-900">Общественные</a>
+      <?php
+$currentUrl = $_SERVER['REQUEST_URI'];
+echo "<!-- Текущий URL: $currentUrl -->";
+if (preg_match('#^/projects/(\d+)(/(\d+))?#', $currentUrl, $matches)) {
+    $sectionId = $matches[1];
+    $subSectionId = isset($matches[3]) ? $matches[3] : null;
+
+    $sections = [
+        1 => 'Коммерческая недвижимость',
+        9 => 'Объекты культуры и искусства',
+        2 => 'Административные здания',
+        3 => 'Промышленные объекты',
+        4 => 'Жилые дома',
+        10 => 'Общественный интерьер',
+        5 => 'Сетевые проекты',
+    ];
+    
+    $subsections = [
+        1 => [
+            2 => 'ТРЦ Соловьи Плаза',
+            48 => 'ТРЦ Удачи',
+            3 => 'ТЦ Новоарбатский',
+            37 => 'ТРК г.Ульяновск',
+            41 => 'ТЦ Галерея',
+            80 => 'Международный центр шоу-румов Expolon',
+            38 => 'Бизнес-центр Дубровка',
+            39 => 'Бизнес-центр ул.Алексея Свиридова',
+        ],
+        9 => [
+            43 => 'МХТ им. А.П.Чехова',
+            45 => 'Государственный Центр Современного Искусства',
+            85 => 'Каретный сарай на территории «Измайлово»',
+        ],
+        2 => [
+            4 => 'Гостиничный комплекс СГАФКСиТ',
+            35 => 'Административное здание Сбербанка РФ',
+            9 => 'ЗАО Райффайзенбанк',
+        ],
+        3 => [
+            46 => 'Депо им. Ильича',
+            36 => 'Кондитерская фабрика Коркунов',
+            5 => 'Производство по изготовлению каминов',
+        ],
+        4 => [
+            91 => 'ЖК Андерсен',
+            10 => 'Жилая застройка остров Кишь (Иран)',
+            11 => 'Индивидуальный жилой дом, коттеджный поселок Усадьба Бергов',
+            6 => 'Загородный посёлок “Старочеркасская Ривьера”',
+            84 => 'Загородный дом для молодой семьи.',
+        ],
+        10 => [
+            44 => 'Интерьер офиса компании ЕПК',
+            92 => 'Офис компании АФК СИСТЕМА',
+            50 => 'Интерьер офиса компании Сахалинская Энергия  Сollaboration area',
+            86 => 'Интерьер в Бизнес-центре Дубровка',
+            96 => 'Каретный сарай на территории «Измайлово»',
+            93 => 'Офис компании КЛЮЧ',
+            49 => 'Интерьер офиса компании Сахалинская Энергия SEB1',
+        ],
+        5 => [
+            32 => 'Costa coffee',
+            30 => 'Lacoste',
+            34 => 'Uniqlo',
+            31 => 'Colins',
+            7 => 'BOSCO',
+            82 => 'Charuel',
+            33 => 'Снежная королева',
+        ],
+    ];
+    
+    ?>
+
+    <div id="submenu-projects" class="mb-10">
+        <nav class="text-right">
+            <?php foreach ($sections as $id => $name): ?>
+                <div>
+                    <a href="/projects/<?php echo $id; ?>/" class="block <?php echo $id == $sectionId ? 'text-[14px] text-black underline decoration-gray-300' : 'text-[14px] hover:text-black hover:underline hover:decoration-gray-300'; ?>">
+                        <?php echo $name; ?>
+                    </a>
+                    <?php if ($id == $sectionId && isset($subsections[$id])): ?>
+                        <ul class="mt-1 mb-2 text-gray-600">
+                            <?php foreach ($subsections[$id] as $subId => $subName): ?>
+                                <li class="ml-4">
+                                    <a href="/projects/<?php echo $id . '/' . $subId; ?>/" 
+                                        class="<?php echo $subId == $subSectionId ? 'text-black underline decoration-gray-300' : 'hover:text-black hover:underline hover:decoration-gray-300'; ?>">
+                                            <?php echo $subName; ?>
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+                </div>
+            <?php endforeach; ?>
         </nav>
-      </div>
+    </div>
+
+<?php } ?>
+
 
       <!-- Основное меню -->
       <nav class="space-y-3 text-right uppercase font-bold">
