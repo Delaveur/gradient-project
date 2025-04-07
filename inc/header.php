@@ -12,7 +12,6 @@
         document.addEventListener('DOMContentLoaded', function() {
             const menuButton = document.getElementById('menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
-            
             menuButton.addEventListener('click', function() {
                 const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
                 menuButton.setAttribute('aria-expanded', !isExpanded);
@@ -21,8 +20,17 @@
             });
         });
     </script>
+    <style>
+        body {
+                font-family: Arial, sans-serif;
+        }
+        .hyphens-auto {
+            hyphens: auto;
+            -webkit-hyphens: auto;
+        }
+    </style>
 </head>
-<body class="bg-white text-gray-700">
+<body class="bg-white text-sm text-gray-600">
     <div class="max-w-[1250px] mx-auto flex justify-between items-center">
         <div class="m-10">
             <a href="/">
@@ -55,7 +63,7 @@
     </div>
             <!-- Mobile menu -->
             <div id="mobile-menu" class="md:hidden hidden absolute w-full bg-white shadow-lg py-2 z-40 uppercase font-bold">
-                <a href="/about" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">О компании</a>
+                <a href="/about-us/" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">О компании</a>
                 <a href="/services" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Услуги</a>
                 <a href="/projects" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Проекты</a>
                 <a href="/clients" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Клиенты</a>
@@ -65,7 +73,7 @@
             </div>
     <div class="max-w-[1250px] mx-auto flex">
     <!-- Левая колонка (хедер) -->
-    <aside class="w-[256px] px-6 pt-10 hidden md:flex flex-col justify-between">
+    <aside class="w-[256px] min-w-64 px-6 pt-10 hidden md:flex flex-col justify-between">
       <div>
       </div>
 
@@ -81,7 +89,7 @@
 
       <!-- Основное меню -->
       <nav class="space-y-3 text-right uppercase font-bold text-sm">
-        <a href="/about" class="hover:text-gray-900 block">О компании</a>
+        <a href="/about-us/" class="hover:text-gray-900 block">О компании</a>
         <a href="/services" class="hover:text-gray-900 block">Услуги</a>
         <a href="/projects" class="hover:text-gray-900 block">Проекты</a>
         <a href="/clients" class="hover:text-gray-900 block">Клиенты</a>
