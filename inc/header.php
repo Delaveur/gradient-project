@@ -30,9 +30,9 @@
         }
     </style>
 </head>
-<body class="bg-white text-sm text-gray-600">
+<body class="bg-white text-[13px] text-gray-600">
     <div class="max-w-[1250px] mx-auto flex justify-between items-center">
-        <div class="m-10">
+        <div class="mt-5 mb-5 ml-2 md:mt-7 md:ml-10 md:mb-0">
             <a href="/">
                 <img src="https://gradient-project.com/image/logo.png" alt="Градиент">
             </a>
@@ -80,7 +80,7 @@
       <!-- Подменю (для раздела Проекты) -->
       <div id="submenu-projects" class="mb-10 hidden">
         <!-- Пример подменю: будет отображаться при переходе на раздел "Проекты" -->
-        <nav class="space-y-2 text-right text-sm font-medium">
+        <nav class="space-y-2 text-right font-medium">
           <a href="/projects/interior" class="block hover:text-gray-900">Интерьеры</a>
           <a href="/projects/architecture" class="block hover:text-gray-900">Архитектура</a>
           <a href="/projects/public" class="block hover:text-gray-900">Общественные</a>
@@ -88,7 +88,7 @@
       </div>
 
       <!-- Основное меню -->
-      <nav class="space-y-3 text-right uppercase font-bold text-sm">
+      <nav class="space-y-3 text-right uppercase font-bold">
         <a href="/about-us/" class="hover:text-gray-900 block">О компании</a>
         <a href="/services" class="hover:text-gray-900 block">Услуги</a>
         <a href="/projects" class="hover:text-gray-900 block">Проекты</a>

@@ -1,7 +1,7 @@
 <?php
 $page_title = "Проекты";
 include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php"); ?>
-<div class="grid grid-cols-4 pr-2 pl-2 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-8 lg:pl-0 gap-2">
+<div class="grid grid-cols-4 pr-2 pl-2 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-8 lg:pl-0 gap-0.5">
     <!-- 1 -->
     <div class="relative overflow-hidden">
         <a href="http://gradient-project.com/projects/1/2/">
