@@ -8,7 +8,7 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <title><?php echo isset($page_title) ? htmlspecialchars($page_title) : 'Проектное бюро Градиент'; ?></title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const menuButton = document.getElementById('menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
@@ -29,6 +29,44 @@
             -webkit-hyphens: auto;
         }
     </style>
+    <style>
+    #thumbnail-container::-webkit-scrollbar {
+    display: none;
+    }
+    #thumbnail-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+    </style>
+    <style>
+  /* Кастомный скроллбар */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 4px 0;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+    transition: background 0.2s;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+    background-clip: content-box;
+  }
+  
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+</style>
 </head>
 <body class="bg-white text-[13px] text-gray-600">
     <div class="max-w-[1250px] mx-auto flex justify-between items-center">
