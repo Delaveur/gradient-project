@@ -1,5 +1,5 @@
 <?php
-$page_title = "Проекты";
+$page_title = "ТРЦ Соловьи Плаза";
 include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php"); ?>
 
 <div class="container mx-auto px-4 py-8">
