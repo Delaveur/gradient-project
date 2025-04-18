@@ -42,7 +42,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php"); ?>
     </div>
 
     <!-- Правая колонка (текст) -->
-    <div class="lg:order-2 lg:h-[calc(100vh-300px)] lg:sticky lg:top-8 lg:overflow-y-auto custom-scrollbar">
+    <div class="lg:order-2 lg:h-[calc(100vh-400px)] lg:sticky lg:top-8 lg:overflow-y-auto custom-scrollbar">
       <div class="prose max-w-none lg:pr-4">
         <div class="space-y-4 text-gray-600">
           <p align="justify">Общая площадь проектирования 31&nbsp;572 м.кв.<br>
