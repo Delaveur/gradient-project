@@ -9,7 +9,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php"); ?>
     <div>
       <!-- Главное изображение -->
       <div class="relative mb-4">
-        <img id="main-image" class="w-full h-96 object-cover rounded-lg cursor-zoom-in" 
+        <img id="main-image" class="w-full h-[479px] object-cover rounded-lg cursor-zoom-in" 
              onclick="openModal(currentIndex)">
         <!-- Кнопки навигации -->
         <button class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow hover:bg-white"

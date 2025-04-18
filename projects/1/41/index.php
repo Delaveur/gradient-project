@@ -4,9 +4,9 @@ include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php"); ?>
 
 <div class="container mx-auto px-4 py-8">
   <!-- Весь контент в одной колонке на мобильных -->
-  <div class="flex flex-col lg:grid lg:grid-cols-[1fr_240px] lg:gap-8 xl:grid-cols-[1fr_280px]">
+  <div class="flex flex-col lg:grid lg:grid-cols-[1fr_240px] lg:gap-8 xl:grid-cols-[1fr_340px]">
     <!-- Левая колонка (галерея + заголовок) -->
-    <div class="lg:order-1">
+    <div class="lg:order-1 md:mt-[-72px]">
       <!-- Заголовок -->
       <div class="mb-6 lg:mb-8">
         <h1 class="text-3xl font-bold text-gray-900 mb-2">ТЦ Галерея</h1>
@@ -15,7 +15,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php"); ?>
 
       <!-- Галерея -->
       <div class="relative mb-4">
-        <img id="main-image" class="w-full h-96 object-cover rounded-lg cursor-pointer"
+        <img id="main-image" class="w-full h-[479px] object-cover rounded-lg cursor-pointer"
           onclick="openModal(currentIndex)">
         <!-- Кнопки навигации -->
         <button class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white backdrop-blur-sm p-2.5 rounded-full shadow-lg transition-all hover:scale-110 active:scale-95"
