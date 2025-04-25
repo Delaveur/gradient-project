@@ -1,5 +1,5 @@
 <?php
-$page_title = "Награды";
+$page_title = "Награды и публикации";
 include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php"); ?>
 
 <div class="pr-2 pl-2 text-justify hyphens-auto">
