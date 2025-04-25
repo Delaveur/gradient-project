@@ -80,7 +80,7 @@
             <?php endif; ?>
             <div class="mt-5 mb-5 ml-2 md:mt-7 md:ml-10 md:mb-0">
                 <a href="/">
-                    <img src="https://gradient-project.com/image/logo.png" alt="Градиент">
+                    <img src="/images/logo.png" alt="Градиент">
                 </a>
             </div>
             <!-- Mobile button -->
