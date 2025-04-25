@@ -1,5 +1,5 @@
 <?php
-$page_title = "Проекты";
+$page_title = "О НАС";
 include($_SERVER["DOCUMENT_ROOT"] . "/inc/header.php"); ?>
 
 <div class="space-y-3 pr-2 pl-2 text-justify hyphens-auto"> 
