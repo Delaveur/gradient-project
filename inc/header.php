@@ -234,7 +234,7 @@
                                 <a href="/services" class="hover:text-gray-900 block">Услуги</a>
                                 <a href="/projects" class="hover:text-gray-900 block">Проекты</a>
                                 <a href="/customers/" class="hover:text-gray-900 block">Клиенты</a>
-                                <a href="/awards" class="hover:text-gray-900 block">Награды и публикации</a>
+                                <a href="/nagradi/" class="hover:text-gray-900 block">Награды и публикации</a>
                                 <a href="/contacts" class="hover:text-gray-900 block">Контакты</a>
                                 <a href="/files/buklet.pdf" class="hover:text-gray-900 block">Скачать буклет PDF</a>
                             </nav>
