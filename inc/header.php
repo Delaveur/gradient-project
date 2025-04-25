@@ -109,10 +109,10 @@
                 <a href="/about-us/" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">О компании</a>
                 <a href="/services" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Услуги</a>
                 <a href="/projects" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Проекты</a>
-                <a href="/clients" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Клиенты</a>
-                <a href="/awards" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Награды и публикации</a>
+                <a href="/customers/" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Клиенты</a>
+                <a href="/nagradi/" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Награды и публикации</a>
                 <a href="/contacts" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Контакты</a>
-                <a href="/files/buklet.pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Скачать буклет PDF</a>
+                <a href="/download_pdf" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Скачать буклет PDF</a>
             </div>
 
             <?php if (strpos($_SERVER['REQUEST_URI'], '/projects') === 0) : ?>
@@ -236,6 +236,6 @@
                                 <a href="/customers/" class="hover:text-gray-900 block">Клиенты</a>
                                 <a href="/nagradi/" class="hover:text-gray-900 block">Награды и публикации</a>
                                 <a href="/contacts" class="hover:text-gray-900 block">Контакты</a>
-                                <a href="/files/buklet.pdf" class="hover:text-gray-900 block">Скачать буклет PDF</a>
+                                <a href="/download_pdf" class="hover:text-gray-900 block">Скачать буклет PDF</a>
                             </nav>
                             </aside>
